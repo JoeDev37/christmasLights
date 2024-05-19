@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+   font-family: "Radio Canada Big", sans-serif;
+}
+
+.lights {
+   width: 100%;
+   height: 30%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+#glow-01,
+#glow-02,
+#glow-03,
+#glow-04 {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+}
+
+#glow-01 {
+   animation: glow-01 1s infinite;
+}
+
+@keyframes glow-01 {
+   0%,
+   100% {
+      box-shadow: 0 0 15px 10px rgb(230, 69, 83, 0.5);
+   }
+   50% {
+      box-shadow: none;
+   }
+}
+
+#glow-02 {
+   animation: glow-02 1s infinite;
+}
+
+@keyframes glow-02 {
+   0%,
+   100% {
+      box-shadow: none;
+   }
+   50% {
+      box-shadow: 0 0 15px 10px rgba(64, 160, 43, 0.5);
+   }
+}
+
+#glow-03 {
+   animation: glow-03 1s infinite;
+}
+
+@keyframes glow-03 {
+   0%,
+   100% {
+      box-shadow: 0 0 15px 10px rgba(4, 165, 229, 0.5);
+   }
+   50% {
+      box-shadow: none;
+   }
+}
+
+#glow-04 {
+   animation: glow-04 1s infinite;
+}
+
+@keyframes glow-04 {
+   0%,
+   100% {
+      box-shadow: none;
+   }
+   50% {
+      box-shadow: 0 0 15px 10px rgba(136, 57, 239, 0.5);
+   }
+}
+
+h1 {
+   text-shadow: 0 0 20px rgba(183, 189, 248, 0.6);
+   text-align: center;
+   margin-right: 5%;
+}
+
+.customization {
+   width: 100%;
+   height: 30%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+#onBtn,
+#offBtn {
+   padding: 20px 40px;
+   background-color: transparent;
+   color: rgb(4, 165, 229);
+   font-size: large;
+   font-weight: bolder;
+   border: none;
+   border-radius: 10px 20px;
+   cursor: pointer;
+   outline: 2px solid rgb(4, 165, 229);
+   transition: all .15s ease-in;
+}
+
+#onBtn:hover {
+   background-color: rgb(4, 165, 229);
+   color: rgb(24, 25, 38);
+}
+
+#offBtn:hover {
+   background-color: rgb(4, 165, 229);
+   color: rgb(24, 25, 38);
+}
+
+.convert {
+   width: 100%;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+}
+
+input {
+   background-color: rgb(41, 44, 60);
+   color: rgb(4, 165, 229);
+   width: 120px;
+   height: 40px;
+   font: larger;
+   border: none;
+   border-radius: 10px 0 0 10px;
+   padding: 5px;
+}
+
+input::placeholder {
+   color: rgb(4, 165, 229);
+}
+
+#incBtn,
+#decBtn {
+   width: 50px;
+   height: 50px;
+   background-color: transparent;
+   color: rgb(4, 165, 229);
+   cursor: pointer;
+   outline: 2px solid rgb(4, 165, 229);
+   border: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   margin: 10px;
+}
+
+#increase,
+#decrease {
+   height: 50%;
+}
